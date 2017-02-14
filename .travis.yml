@@ -1,0 +1,10 @@
+language: ruby
+cache: bundler
+rvm:
+  - 2.3.0
+gemfile:
+  - Gemfile
+  - gemfiles/activesupport5.gemfile
+before_install:
+  - sudo apt-get install jpegoptim pngquant
+  - gem update bundler
