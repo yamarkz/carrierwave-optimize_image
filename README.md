@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
   - Install for [pngquant](https://github.com/pornel/pngquant)
   - Install for [jpegoptim](https://github.com/tjko/jpegoptim)
 
-Or instal the utilities via homebrew:
+Or install the utilities via homebrew:
 
     $ brew install pngquant jpegoptim
 
