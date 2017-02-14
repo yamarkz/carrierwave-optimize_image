@@ -13,11 +13,11 @@ module CarrierWave
         private
 
           def which_pngquant?
-            system "which pngquant"
+            system! "which pngquant"
           end
 
           def which_jpegoptim?
-            system "which jpegoptim"
+            system! "which jpegoptim"
           end
 
           def optimize_for(path, opts)
