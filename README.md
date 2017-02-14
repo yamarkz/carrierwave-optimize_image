@@ -1,0 +1,1 @@
+# carrierwave-optimize_image
