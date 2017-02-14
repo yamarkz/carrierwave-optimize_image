@@ -2,6 +2,7 @@
 
 require "carrierwave/optimize_image/image_optimizer"
 require "carrierwave/optimize_image/version"
+require "carrierwave/exceptions"
 
 module CarrierWave
   module OptimizeImage
