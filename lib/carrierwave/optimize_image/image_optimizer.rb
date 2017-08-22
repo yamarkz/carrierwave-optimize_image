@@ -5,20 +5,12 @@ module CarrierWave
     module ImageOptimizer
       class << self
         def optimize(path, opts = {})
-          raise NotFoundPngquant unless which_pngquant?
-          raise NotFoundJpegoptim unless which_jpegoptim?
+          raise NotFoundPngquant if `which pngquant` == ""
+          raise NotFoundJpegoptim if `which jpegoptim` == ""
           optimize_for(path, opts)
         end
 
         private
-
-          def which_pngquant?
-            system! "which pngquant"
-          end
-
-          def which_jpegoptim?
-            system! "which jpegoptim"
-          end
 
           def optimize_for(path, opts)
             case mimetype(path)
